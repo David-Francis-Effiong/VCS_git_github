@@ -1,0 +1,248 @@
+Is
+mkdir folders (create directory)
+cd folders
+ls
+root@DESKTOP-JF12HU2: ~$
+root@DESKTOP-JF12HU2: $cd .. (go up one level. Insert a space before ..)
+root@DESKTOP-JF12HU2: /home $ cd ..
+root@DESKTOP-JF12HU2: /$cd mnt/
+root@DESKTOP-JF12HU2: /cd/mnt/c (navigate to C: drive)
+root@DESKTOP-JF12HU2: /mnt $ cd c
+root@DESKTOP-JF12HU2: mnt/c$ cd ~ (cd ~ is return to home directory).
+root@DESKTOP-JF12HU2:~$
+root@DESKTOP-JF12HU2:~$ mkdir randomfolder
+root@DESKTOP-JF12HU2:~$ cd randomfolder/
+root@DESKTOP-JF12HU2: /$ cd ~/randomfolder (go to specific folder)
+root@DESKTOP-JF12HU2:~/randomfolder $ cd ~
+root@DESKTOP-JF12HU2:~$ cd ..
+root@DESKTOP-JF12HU2:~$/home $ cd ~
+root@DESKTOP-JF12HU2: $ cd ..
+root@DESKTOP-JF12HU2: $ cd home/
+root@DESKTOP-JF12HU2: home $ cd ~
+root@DESKTOP-JF12HU2:~$ cd randomfolder/
+root@DESKTOP-JF12HU2:~/randomfolder $ cd / (space before /)
+root@DESKTOP-JF12HU2:/$cd ~/randomfolder/
+root@DESKTOP-JF12HU2:~/randomfolder $ cd /
+root@DESKTOP-JF12HU2:$cd/mnt/c/users/jad/Desktop/folders/project
+
+
+
+
+$ls
+cd mnt
+root@DESKTOP-JF12HU2:/mnt $ cd c
+root@DESKTOP-JF12HU2:/mnt/c $ cd users/
+root@DESKTOP-JF12HU2:/mnt/c/users $ Is
+root@DESKTOP-JF12HU2:/mnt/c/users $ cd jad/
+root@DESKTOP-JF12HU2:/mnt/c/users/jad $ Is
+root@DESKTOP-JF12HU2:/mnt/c/users/jad $ cd Desktop/
+root@DESKTOP-JF12HU2:/mnt/c/users/jad/Desktop $ cd folders/
+root@DESKTOP-JF12HU2:/mnt/c/users/jad/Desktop/folders $ clear
+
+
+root@DESKTOP-JF12HU2:$Is
+root@DESKTOP-JF12HU2:$ cd projects
+root@DESKTOP-JF12HU2:$ cd ..
+root@DESKTOP-JF12HU2: $ mkdir school
+root@DESKTOP-JF12HU2:Is
+root@DESKTOP-JF12HU2:cd school/
+root@DESKTOP-JF12HU2:mkdir service
+root@DESKTOP-JF12HU2:Is
+root@DESKTOP-JF12HU2:cd service/
+root@DESKTOP-JF12HU2:cd ..
+root@DESKTOP-JF12HU2:cd ..
+root@DESKTOP-JF12HU2:Is
+root@DESKTOP-JF12HU2:rm - rf school/
+root@DESKTOP-JF12HU2:Is
+root@DESKTOP-JF12HU2: git version
+root@DESKTOP-JF12HU2:touch file.csv
+root@DESKTOP-JF12HU2:Is
+root@DESKTOP-JF12HU2:rm file.csv
+
+
+Creating an empty git repository
+
+
+root@DESKTOP-JF12HU2:~$ cd ..
+root@DESKTOP-JF12HU2:/home $ cd ..
+root@DESKTOP-JF12HU2:/$cd mnt/
+root@DESKTOP-JF12HU2:/mnt $ cd c/
+root@DESKTOP-JF12HU2:/mnt/c $ Is
+root@DESKTOP-JF12HU2:/mnt/cd users/
+root@DESKTOP-JF12HU2:/mnt/c/Is
+root@DESKTOP-JF12HU2:/mnt/cd Dave/
+root@DESKTOP-JF12HU2:/mnt/c/Is
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave $ cd Desktop/
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop $ cd folders/
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/ cd projects/
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/Is
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/cd myprojects/
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects (copy this line and paste in your terminal for use)
+
+
+adding or removing file
+
+root@DESKTOP-JF12HU2:~$ cd/mnt/c/users/Dave/Desktop/projects/myprojects
+root@DESKTOP-JF12HU2:Is
+root@DESKTOP-JF12HU2:git status 
+root@DESKTOP-JF12HU2:git add path-for-terminal.txt (you'd have to create this txt file)
+root@DESKTOP-JF12HU2: git status
+root@DESKTOP-JF12HU2:touch file.txt
+root@DESKTOP-JF12HU2:touch script.py
+root@DESKTOP-JF12HU2:touch website.html
+root@DESKTOP-JF12HU2: touch style.css
+root@DESKTOP-JF12HU2:git status (mentions untracked files)
+root@DESKTOP-JF12HU2:git add . (adds all the files together)
+root@DESKTOP-JF12HU2:git status
+
+delete the files manually from the folder
+
+
+root@DESKTOP-JF12HU2: git status (still sees 5 new files/2 files shown to be deleted)
+root@DESKTOP-JF12HU2:git add .
+root@DESKTOP-JF12HU2:git status
+root@DESKTOP-JF12HU2: git rm file.txt
+root@DESKTOP-JF12HU2:git rm -f file.txt (forced removal wipes out the file completely)
+root@DESKTOP-JF12HU2:git status
+root@DESKTOP-JF12HU2:git rm --cached file.txt (untrack a file?)
+root@DESKTOP-JF12HU2:git status
+
+commit
+
+root@DESKTOP-JF12HU2:git config --global user.email "davidfrancisef@gmail.com"
+root@DESKTOP-JF12HU2:git config --global user.name "Dave"
+root@DESKTOP-JF12HU2:git commit --help (to read the manual)
+root@DESKTOP-JF12HU2:git commit -m "Initial commit" (standard protocol)
+root@DESKTOP-JF12HU2:git commit -a -m "..." (add tracked files)
+root@DESKTOP-JF12HU2:git log (brings out a list of all your commits)
+
+
+Looking through commits
+
+root@DESKTOP-JF12HU2: git checkout 8ae94983....(go back in time to a particular commit)
+root@DESKTOP-JF12HU2:git log
+root@DESKTOP-JF12HU2:git checkout master
+
+
+git revert/reset
+
+
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects git revert
+root@DESKTOP-JF12HU2: git log --oneline
+root@DESKTOP-JF12HU2: git reset --hard a30398....(go back in time before any commit was made)
+root@DESKTOP-JF12HU2: git ignore (do not want to track)
+
+
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects git rm -r --cache
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects git add .
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojectsgit commit -m "fixed file tracking"
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojectsgit status
+
+
+create a git branch
+
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects$ cd..
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects$ mkdir mynewsoftware
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects$  cd mynewsoftware
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware$  git innit
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware$ mkdir src 
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware$ mkdir lib
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware$ cd src/
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/src$ touch file.txt
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/src$ touch script.js
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/src$ cd ..
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware$ cd lib/
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/lib$ touch lib.py
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/lib$ touch file2.txt
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/lib$ cd ..
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git status
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git add .
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git commit -m "initial commit"
+
+create a branch
+
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git checkout -b dev (creates a new branch and switches to it)
+ 
+switch to the other (master) branch
+
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git checkout master
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git branch bugs (creates a new branch too)
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git branch - a (list all the branches available)
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git checkout bugs
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git branch -a
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git branch -d bugs (deletes a branch)
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git  branch -a
+
+create a commit/edit a branch
+
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git checkout dev (switches to the dev branch)
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git add .
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git  git commit -m "Dummy commit" 
+(insert a text into the txt file)
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git add . 
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git commit -m "Dummy commit 2"
+
+
+merging branches
+
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git checkout dev (add version file to your txt)
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git status
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git add .
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git commit -m "Release V1.0"
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git git checkout master
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git merge dev
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ git log (shows all the commits so far)
+
+
+create repo on git and push to github
+
+
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ cd ..
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ mkdir GitRemoteCon
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/$ cd GitRemoteCon/
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$  git init
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git remote origin https:// (insert the new github repo you created)
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git remote -v
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git pull (not working because no branch is tracked)
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git pull origin master
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git status
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git log
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ ls (list all the folders and files)
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ rm -rf License
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ Is
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git status
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git add .
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git -m commit "Removed folder"
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git log
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git push -u origin master (-u remembers the branch that we are pushing. masters is pushed to our new repository)
+(create a new license file on githbub)
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git pull
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ Is
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ rm -rf License.md/
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git add .
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git commit -m "Remove proper mistake" 
+
+
+create a new branch
+
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git checkout -b err01
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git status
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git add . 
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git commit -m 'fixed error'
+
+merge branch
+
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git checkout master (or main)
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git merge err01
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git log
+
+push the new branch created to the repositor
+
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git push origin err01
+
+after merging, you can now remove the err01 branch
+
+root@DESKTOP-JF12HU2:/mnt/c/users/Dave/Desktop/projects/myprojects/mynewsoftware/GitRemoteCon$ git push origin --delete err01
+
+
+
